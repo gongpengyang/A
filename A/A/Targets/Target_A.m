@@ -11,6 +11,12 @@
 
 @implementation Target_A
 
+- (UIViewController *)Action_viewController:(NSDictionary *)params
+{
+    AViewController *viewController = [[AViewController alloc] init];
+    return viewController;
+}
+
 - (UIViewController *)Action_Category_ViewController:(NSDictionary *)params
 {
     typedef void (^CallbackType)(NSString *);
